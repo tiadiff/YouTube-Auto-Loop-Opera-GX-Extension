@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Auto Loop per Opera GX",
+  "version": "1.0",
+  "description": "Aggiunge un comodo pulsante per riprodurre in loop la canzone o il video corrente su YouTube.",
+  "icons": {
+    "48": "youtube-loop-48.ico",
+    "128": "youtube-loop-128.ico"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
